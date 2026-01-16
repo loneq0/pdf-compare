@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сравнение PDF [фриланс]</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📋 Сравнение PDF</h1>
+            <p class="subtitle"> скрипт для сайта вордпресс</p>
+        </header>
+        
+        <section class="reference-section">
+            <h2>PDF на сайте</h2>
+            <div id="reference-card" class="reference-card">
+                <!-- Эталонная карточка будет добавлена через JavaScript -->
+            </div>
+        </section>
+        
+        <section class="pdf-section">
+            <h2>Сравнение с:</h2>
+            <div id="pdf-list" class="pdf-list">
+                <!-- Схемы будут добавлены через JavaScript -->
+            </div>
+        </section>
+        
+        <section class="upload-section">
+            <h2>Добавить PDF для сравнения</h2>
+            <div class="upload-area">
+                <input type="file" id="pdf-upload" accept=".pdf" hidden>
+                <label for="pdf-upload" class="upload-button">
+                    <span>📎 Выбрать PDF файл</span>
+                </label>
+                <p class="upload-hint">Максимальный размер: 10 МБ</p>
+                <p class="upload-hint" style="font-size: 0.85em; color: #999; margin-top: 5px;">
+                    Файлы будут автоматически сравниваться с эталонным (test-reference.pdf)
+                </p>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Модальное окно для просмотра PDF -->
+    <div id="pdf-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-title"></h3>
+            <iframe id="pdf-viewer" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
