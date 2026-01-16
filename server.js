@@ -6,7 +6,7 @@ const fs = require('fs');
 const pdfParse = require('pdf-parse');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Путь к тестовому эталонному файлу
 const TEST_PDF_PATH = path.join(__dirname, 'uploads', 'test-reference.pdf');
