@@ -2,7 +2,7 @@
 let pdfSchemes = [];
 
 // API базовый URL
-const API_URL = 'http://localhost:3000/api';
+const API_URL = '/api';
 
 // Инициализация при загрузке страницы
 document.addEventListener('DOMContentLoaded', function() {
